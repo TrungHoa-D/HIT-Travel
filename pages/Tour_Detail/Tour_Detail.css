@@ -64,7 +64,7 @@ html {
 .bg img{
     width: 100%;
     position: relative;
-    
+    margin-top: 40px;
 }
 
 /* Introduction */
@@ -121,14 +121,19 @@ html {
 #form_intro .intro_main{
     width: 76.5%;
     margin: 0 11.75%;
-}
-#form_intro .intro_main{
     margin-top: 80px;
+}
+#intro_left,
+#intro_right{
+    padding: 15px;
+}
+#intro_left{
+    min-width: 61.2%;
 }
 #intro_left h2{
     font-size: 20px;
     color: #666;
-    margin-bottom: 10px;
+    line-height: 52px;
     font-weight: 600;
 }
 #intro_left i{
@@ -168,4 +173,83 @@ html {
     color: #878787;
     margin: 0 0 12px;
     font-weight: 300;
+}
+#intro_left .question{
+    margin: 0 0 20px;
+}
+#intro_left button{
+    color: #666;
+    font-size: 18px;
+    padding: 20px 15px;
+    width: 100%;
+    justify-content: space-between;
+}
+#intro_left button>i{
+    color: #666;
+}
+#intro_left .q1,
+#intro_left .up{
+    color: #FFF;
+    background-color: var(--color_main);
+}
+#intro_left .question p{
+    font-size: 16px;
+    color: #666;
+    padding: 20px;
+    background-color: #D6EEED;
+}
+
+#intro_left img{
+    margin: 0 20px 0 0;
+}
+#intro_left .name{
+    font-size: 18px;
+    color: #666;
+}
+#intro_left .date{
+    font-size: 14px;
+    color: #878787;
+    margin: 0 0 16px;
+}
+#intro_left .rating_tour>i,
+#intro_left .form_rating>.s1{
+    color: #F7931E;
+    font-size: 18px;
+}
+#intro_left .cmt{
+    font-size: 16px;
+    color: #878787;
+    margin: 18px 0 30px;
+}
+#intro_left .form_rating{
+    margin-bottom: 30px;
+}
+#intro_left .form_rating samp{
+    color: #8D8E92;
+    margin: 20px 10px 0 0;
+    font-weight: 400;
+}
+#intro_left .form_rating>i{
+    color: #E1E1E1;
+    font-size: 18px;
+}
+
+#intro_left .form_contact{
+    padding: 30px;
+    background-color: #D6EEED;
+}
+#intro_left .form_contact>input,textarea{
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color:#8D8E92;
+}
+#intro_left .form_contact button{
+    padding: 15px 25px;
+    background-color: var(--color_main);
+    font-size: 16px;
+    color: #FFF;
+    width: max-content;
+    font-weight: 800;
 }

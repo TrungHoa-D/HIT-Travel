@@ -162,15 +162,42 @@
                     </div>
                 </div>
                 <h2>Tour Location</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.47378845151!2d105.73253187503215!3d21.05373098060188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31345457e292d5bf%3A0x20ac91c94d74439a!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2hp4buHcCBIw6AgTuG7mWk!5e0!3m2!1svi!2s!4v1703772106008!5m2!1svi!2s"
+                    width="100%" height="300" style="border:10px solid #e1e1e1; margin-bottom: 30px;" allowfullscreen=""
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <h2>Frequently Asked Question</h2>
+                <div class="question">
+                    <div class="flex">
+                        <button class="border_radius q1 flex">How to book the new tour for 2 persons?<i
+                                class="fa-solid fa-chevron-up up"></i></button>
+
+                    </div>
+                    <p>Lorem Ipsum available, but the majority have suffered alteration in some form, by injected
+                        humour, or randomised words which don't look even slightly believable. If you are going to use a
+                        passage of lorem Ipsum you need to be sure there isn't anything.</p>
+                </div>
+                <div class="question">
+                    <div>
+                        <button class="border_radius flex">Why are your tours so expensive?<i
+                                class="fa-solid fa-chevron-down"></i></button>
+                    </div>
+                </div>
+                <div class="question">
+                    <div>
+                        <button class="border_radius flex">Which payment methods are acceptable?<i
+                                class="fa-solid fa-chevron-down"></i></button>
+                    </div>
+                </div>
+
                 <h2>One Review</h2>
                 <div class="blog flex">
                     <div>
                         <img src="/img/avt.png" alt="">
                     </div>
                     <div>
-                        <h5>David Warner</h5>
-                        <p>21 December, 2021</p>
+                        <h5 class="name">David Warner</h5>
+                        <p class="date">21 December, 2021</p>
                         <div class="rating_tour">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
@@ -178,29 +205,62 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                         </div>
-                        <p>lorem</p>
+                        <p class="cmt">Lorem Ipsum available, but the majority have suffered alteration in some form, by
+                            injected humour, or randomised words which don't look even slightly believable</p>
                     </div>
                 </div>
                 <h2>Write A Review</h2>
                 <div class="form_rating">
-                    <samp>Rating</samp>
-                    <i class="fa-solid fa-star"></i>
+                    <samp>Rating:</samp>
+                    <i class="fa-solid fa-star s1"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                 </div>
-                <div class="form_contact">
-                    <input type="text" placeholder="Enter your name">
-                    <input type="email" placeholder="Enter email address">
-                    <input type="text" placeholder="Type you keyword">
-                    <button>Submit Comment</button>
+                <div class="form_contact border_radius">
+                    <input type="text" class="border_radius" placeholder="Enter your name">
+                    <input type="email" class="border_radius" placeholder="Enter email address">
+                    <textarea class="keyword border_radius" rows="6" placeholder="Type you keyword"></textarea>
+                    <button class="border_radius">Submit Comment</button>
                 </div>
             </div>
             <div id="intro_right">
-                <img src="/img/black-friday.png" alt="">
+                <div class="booking">
+                    <h2>Book This Tour</h2>
+                    <div class="tour_input">
+                        <i class="fa-regular fa-calendar-days"></i>
+                        <p>Date from:</p>
+                        <input type="text">
+                    </div>
+                    <div class="tour_input">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    <p>Time:</p>
+                    <input type="text">
+                </div>
+                <div>
+                    Tickets:
+                    <samp>Please, select date first</samp>
+                </div>
+                <p>Add Extra</p>
+                <div class="tour_check">
+                    <input type="checkbox">
+                    <p>Service per booking</p>
+                    <samp>$50.00</samp>
+                </div>
+                <div class="tour_check">
+                    <input type="checkbox">
+                    <p>Service per person</p>
+                </div>
+                <samp>Adult: $50</samp>
+                <samp>Youth: $55</samp>
+                <samp>Children: $30</samp>
+                <p>Total: </p>
+                <button>Book now</button>
             </div>
+            <img src="/img/black-friday.png" alt="">
         </div>
+    </div>
     </div>
 </body>
 
