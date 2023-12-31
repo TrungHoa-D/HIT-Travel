@@ -6,17 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tour_Detail</title>
     <link rel="stylesheet" href="./Tour_Detail.css">
-    <link rel="stylesheet" href="/font/font.css">
+    <link rel="stylesheet" href="../font/font.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha52-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpDypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+
+    <!--Header-->
+    <div id="Header">
+        <div class="container">
+            <div class="header-main flex">
+                <a href="../index.html">
+                    <img src="../img/logo.jpg" alt="HIT travel">
+                </a>
+                <div class="navbar-collapse flex">
+                    <div class="navbar flex">
+                        <ul class="nav-list flex">
+                            <li class="nav-item">
+                                <a href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./Tour_List.html">Tours</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="">Destinations</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="booking-button">
+                        <a href="">
+                            Booking Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Scroll up-->
+    <a href="#" class="scrollup">
+        <i class="fa-solid fa-angle-up"></i>
+    </a>
+    <!--Main-->
+    <main id="main">
+    </main>
+
     <!-- Banner -->
     <div id="banner">
         <div class="img">
-            <img src="./img/Banner.png" alt="">
+            <img src="../img/Banner.png" alt="">
         </div>
         <div class="text flex">
             <div>
@@ -30,13 +78,14 @@
     </div>
 
     <div class="bg">
-        <img src="./img/bg.png" alt="">
+        <img src="../img/bg.png" alt="">
     </div>
     <div id="form_intro">
+
         <!-- Introduction -->
         <div id="intro">
             <div>
-                <img src="./img/tour.png" alt="">
+                <img src="../img/tour.png" alt="">
             </div>
             <div class="card border_radius flex">
                 <div class="text">
@@ -161,11 +210,13 @@
                         <p>-Unlimited coffee</p>
                     </div>
                 </div>
+
                 <h2>Tour Location</h2>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.47378845151!2d105.73253187503215!3d21.05373098060188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31345457e292d5bf%3A0x20ac91c94d74439a!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2hp4buHcCBIw6AgTuG7mWk!5e0!3m2!1svi!2s!4v1703772106008!5m2!1svi!2s"
                     width="100%" height="300" style="border:10px solid #e1e1e1; margin-bottom: 30px;" allowfullscreen=""
                     loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
                 <h2>Frequently Asked Question</h2>
                 <div class="question">
                     <div class="flex">
@@ -193,7 +244,7 @@
                 <h2>One Review</h2>
                 <div class="blog flex">
                     <div>
-                        <img src="./img/avt.png" alt="">
+                        <img src="/img/avt.png" alt="">
                     </div>
                     <div>
                         <h5 class="name">David Warner</h5>
@@ -209,59 +260,167 @@
                             injected humour, or randomised words which don't look even slightly believable</p>
                     </div>
                 </div>
+
                 <h2>Write A Review</h2>
                 <div class="form_rating">
-                    <samp>Rating:</samp>
-                    <i class="fa-solid fa-star s1"></i>
+                    <samp>Rating</samp>
+                    <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                 </div>
                 <div class="form_contact border_radius">
-                    <input type="text" class="border_radius" placeholder="Enter your name">
-                    <input type="email" class="border_radius" placeholder="Enter email address">
-                    <textarea class="keyword border_radius" rows="6" placeholder="Type you keyword"></textarea>
+                    <input type="text" placeholder="Enter your name" class="border_radius">
+                    <input type="email" placeholder="Enter email address" class="border_radius">
+                    <input type="text" placeholder="Type you keyword" class="border_radius">
                     <button class="border_radius">Submit Comment</button>
                 </div>
             </div>
+
+            <!-- intro_right -->
             <div id="intro_right">
-                <div class="booking">
+                <div class="booking  border_radius">
                     <h2>Book This Tour</h2>
-                    <div class="tour_input">
-                        <i class="fa-regular fa-calendar-days"></i>
-                        <p>Date from:</p>
-                        <input type="text">
+                    <div class="tour_input flex">
+                        <div class="flex">
+                            <i class="fa-regular fa-calendar-days"></i>
+                            <p>Date from:</p>
+                        </div>
+                        <input type="text" class="border_radius">
                     </div>
-                    <div class="tour_input">
-                    <i class="fa-solid fa-clock-rotate-left"></i>
-                    <p>Time:</p>
-                    <input type="text">
+                    <div class="tour_input flex">
+                        <div class="flex">
+                            <i class="fa-solid fa-clock-rotate-left"></i>
+                            <p>Time:</p>
+                        </div>
+                        <input type="text" class="border_radius">
+                    </div>
+                    <div class="tour_ticket">
+                        Tickets:
+                        <samp>Please, select date first</samp>
+                    </div>
+                    <p class="tour_choose">Add Extra</p>
+                    <div class="tour_check flex">
+                        <div class="flex">
+                            <input type="checkbox" class="border_radius">
+                            <p>Service per booking</p>
+                        </div>
+                        <samp>$50.00</samp>
+                    </div>
+                    <div class="tour_check flex">
+                        <div class="flex">
+                            <input type="checkbox" class="border_radius">
+                            <p>Service per person</p>
+                        </div>
+                    </div>
+                    <div class="age">
+                        <samp>Adult: $50</samp>
+                        <samp>Youth: $55</samp>
+                        <samp>Children: $30</samp>
+                    </div>
+                    <p class="tour_total">Total: </p>
+                    <button class="tour_book border_radius">Book now</button>
                 </div>
-                <div>
-                    Tickets:
-                    <samp>Please, select date first</samp>
-                </div>
-                <p>Add Extra</p>
-                <div class="tour_check">
-                    <input type="checkbox">
-                    <p>Service per booking</p>
-                    <samp>$50.00</samp>
-                </div>
-                <div class="tour_check">
-                    <input type="checkbox">
-                    <p>Service per person</p>
-                </div>
-                <samp>Adult: $50</samp>
-                <samp>Youth: $55</samp>
-                <samp>Children: $30</samp>
-                <p>Total: </p>
-                <button>Book now</button>
+                <img src="../img/black-friday.png" alt="">
             </div>
-            <img src="./img/black-friday.png" alt="">
         </div>
     </div>
     </div>
+
+    <!--Footer-->
+    <footer id="footer">
+        <div class="container">
+            <div class="row flex">
+                <div class="col1">
+                    <div class="footer-widget">
+                        <h5>Top destination</h5>
+                        <ul>
+                            <li><a href="">Indonesia, Jakarta</a></li>
+                            <li><a href="">Maldives, Malé</a></li>
+                            <li><a href="">Australia, Canberra</a></li>
+                            <li><a href="">Thailand, Bangkok</a></li>
+                            <li><a href="">Morocco, Rabat</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col2">
+                    <div class="footer-widget">
+                        <h5>Categories</h5>
+                        <ul>
+                            <li><a href="">Travel</a></li>
+                            <li><a href="">Lifestyle</a></li>
+                            <li><a href="">Fashion</a></li>
+                            <li><a href="">Education</a></li>
+                            <li><a href="">Morocco, Rabat</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col2">
+                    <div class="footer-widget">
+                        <h5>Quick links</h5>
+                        <ul>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Contact</a></li>
+                            <li><a href="./Tour_List.html">Tours</a></li>
+                            <li><a href="">Booking</a></li>
+                            <li><a href="">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col3">
+                    <div class="footer-widget">
+                        <h5>Get a newsletter</h5>
+                        <p>For the latest deals and tips, travel no further than your inbox</p>
+                        <form action="" class="subcribe-form">
+                            <input type="text" class="form-control" placeholder="Email address">
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-9 col-md-8">
+                    <div class="footer-left">
+                        <img src="../img/logo.jpg" alt="">
+                        <div class="h-border"></div>
+                        <div class="copyright">
+                            <p>© 2023 All Right Reserved</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="social flex">
+                    <ul class="team-social footer-social flex">
+                        <li class="share-icon">
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="share-icon">
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="share-icon">
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="share-icon">
+                            <a href="#">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <li class="share-icon">
+                            <a href="#">
+                                <i class="fab fa-google-plus-g"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
