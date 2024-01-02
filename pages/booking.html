@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comforter+Brush&family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="./booking.css" />
     <link
       rel="stylesheet"
@@ -20,60 +21,54 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link
-      rel="stylesheet"
-      href="./fontawesome-free-5.12.0-web/css/all.min.css"
-    />
-    <style>
-      .text {
-        display: none;
-      }
-      .show-text {
-        display: block;
-      }
-    </style>
+    <link 
+    rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   </head>
   <body>
     <!--Header-->
     <div id="Header">
       <div class="container">
-        <div class="header-main flex">
-          <a href="../index.html">
-            <img
-              src="../img/logo.jpg"
-              alt="HIT travel"
-            />
-          </a>
-          <div class="navbar-collapse flex">
-            <div class="navbar flex">
-              <ul class="nav-list flex">
-                <li class="nav-item">
-                  <a href="../index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a href="">About Us</a>
-                </li>
-                <li class="nav-item">
-                  <a href="./Tour_List.html">Tours</a>
-                </li>
-                <li class="nav-item">
-                  <a href="">Destinations</a>
-                </li>
-                <li class="nav-item">
-                  <a href="">Blog</a>
-                </li>
-                <li class="nav-item">
-                  <a href="./contact.html">Contact Us</a>
-                </li>
-              </ul>
-            </div>
-            <div class="booking-button">
-              <a href="./booking.html"> Booking Now </a>
-            </div>
+          <div class="header-main flex">
+              <a href='../index.html'>
+                  <img src="../img/logo.jpg" alt="HIT travel">
+              </a>
+              <div class="navbar-collapse flex">
+                  <div class="navbar flex">
+                      <ul class="nav-list flex">
+                          <li class="nav-item">
+                              <a href="../index.html">Home</a>
+                          </li>
+                          <li class="nav-item">
+                              <a href="">About Us</a>
+                          </li>
+                          <li class="nav-item">
+                              <a href="./Tour_List.html">Tours</a>
+                          </li>
+                          <li class="nav-item">
+                              <a href="">Destinations</a>
+                          </li>
+                          <li class="nav-item">
+                              <a href="">Blog</a>
+                          </li>
+                          <li class="nav-item">
+                              <a href="./contact.html" >Contact Us</a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="booking-button" style="width: 170px;">
+                      <a href="../pages/booking.html" >
+                          Booking Now
+                      </a>
+                  </div>
+              </div>
           </div>
-        </div>
       </div>
-    </div>
+</div>
     <!--Scroll up-->
     <a href="#" class="scrollup">
       <i class="fa-solid fa-angle-up"></i>
@@ -83,7 +78,7 @@
       <section
         class="small-banner"
         style="
-          background: url('http://tourest.webtravel.vn/images/sub-page.png');
+          background: url(../img/sub-page.png);
         "
       >
         <div class="container">
@@ -118,6 +113,7 @@
                     class="form-control booking-from"
                     id="inputAddress"
                     placeholder="Enter your name"
+                    style="font-size: 16px !important;"
                   />
                 </div>
                 <div class="col-md-12">
@@ -126,6 +122,7 @@
                     class="form-control"
                     id="inputAddress2"
                     placeholder="Enter email address"
+                    style="font-size: 16px !important;"
                   />
                 </div>
                 <div class="col-md-6">
@@ -139,13 +136,7 @@
                 </div>
                 <div class="col-md-6">
                   <div class="input-group date">
-                    <input
-                      type="text"
-                      data-provide="datepicker"
-                      class="form-control start-date hasDatepicker"
-                      placeholder="Date to"
-                      id="dateto"
-                    />
+                      <input id="myID" placeholder="Date to" class="form-control" style="width: 554px !important; background-color: #fff !important; font-size: 16px !important;">                  
                   </div>
                 </div>
                 <div class="col-md-6">
@@ -177,7 +168,7 @@
                   <div class="form-check">
                     <input
                       type="checkbox"
-                      class="form-check-label"
+                      class="form-check-input"
                       id="gridCheck"
                     />
                     <label for="gridCheck" class="form-check-label">
@@ -206,13 +197,8 @@
                   </p>
                 </div>
                 <div class="col-12">
-                  <button
-                    type="submit"
-                    class="booking-bt btn btn-primary"
-                    style="width: 100%"
-                  >
-                    Book Now
-                  </button>
+                  
+                    <a href class="btn btn-primary booking-bt" style="margin-bottom: 20px;">Booking now</a>            
                 </div>
               </form>
             </div>
@@ -222,25 +208,20 @@
               <div class="col-md-12">
                 <h2 class="faq-hedar">Frequently Asked Question</h2>
                 <div class="accordion accordion-flush" id="accordionExample">
-                  <article class="accordion-item">
+                  <div class="accordion-item">
                     <h2 class="accordion-header" id="headingOne">
                       <button
-                        class="accordion-button collaped collapsed"
+                        class="accordion-button collaped"
                         type="button"
                         data-toggle="collapse"
-                        data-target="#collapseOne"
-                        aria-expanded="false"
+                        data-target="#collapseOne"                        
                         aria-controls="collapseOne"
                       >
-                        <p>How to book the new tour for 2 persons?</p>
-                        <span class="icon"
-                          ><i class="fa-solid fa-angle-down"></i
-                        ></span>
+                        <p>How to book the new tour for 2 persons?</p>                      
                       </button>
                     </h2>
-
-                    <div class="card-body text">
-                      <p>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                      <p class="card-body">
                         Lorem Ipsum available, but the majority have suffered
                         alteration in some form, by injected humour, or
                         randomised words which don't look even slightly
@@ -248,26 +229,21 @@
                         Ipsum you need to be sure there isn't anything.
                       </p>
                     </div>
-                  </article>
-                  <article class="accordion-item 2">
+                  </div>
+                  <div class="accordion-item">
                     <h2 class="accordion-header" id="headingTwo">
                       <button
-                        class="accordion-button collaped collapsed"
+                        class="accordion-button collapsed"
                         type="button"
                         data-toggle="collapse"
-                        data-target="#collapseTwo"
-                        aria-expanded="false"
+                        data-target="#collapseTwo"                    
                         aria-controls="collapseTwo"
                       >
-                        <p>Why are your tours so expensive?</p>
-                        <span class="icon"
-                          ><i class="fa-solid fa-angle-down"></i
-                        ></span>
+                        <p>Why are your tours so expensive?</p>                        
                       </button>
                     </h2>
-
-                    <div class="card-body text 2">
-                      <p>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                      <p class="card-body">
                         Lorem Ipsum available, but the majority have suffered
                         alteration in some form, by injected humour, or
                         randomised words which don't look even slightly
@@ -275,26 +251,21 @@
                         Ipsum you need to be sure there isn't anything.
                       </p>
                     </div>
-                  </article>
-                  <article class="accordion-item 3">
+                  </div>
+                  <div class="accordion-item">
                     <h2 class="accordion-header" id="headingThree">
                       <button
-                        class="accordion-button collaped collapsed"
+                        class="accordion-button collapsed"
                         type="button"
                         data-toggle="collapse"
-                        data-target="#collapseThree"
-                        aria-expanded="false"
+                        data-target="#collapseThree"                     
                         aria-controls="collapseThree"
                       >
-                        <p>Which payment methods are acceptable?</p>
-                        <span class="icon"
-                          ><i class="fa-solid fa-angle-down"></i
-                        ></span>
+                        <p>Which payment methods are acceptable?</p>                      
                       </button>
                     </h2>
-
-                    <div class="card-body text 3">
-                      <p>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                      <p class="card-body">
                         Lorem Ipsum available, but the majority have suffered
                         alteration in some form, by injected humour, or
                         randomised words which don't look even slightly
@@ -302,7 +273,7 @@
                         Ipsum you need to be sure there isn't anything.
                       </p>
                     </div>
-                  </article>
+                  </div>
                 </div>
               </div>
             </div>
@@ -371,7 +342,7 @@
           <div class="col-lg-9 col-md-8">
             <div class="footer-left">
               <img
-                src="https://scontent.fhan2-4.fna.fbcdn.net/v/t39.30808-6/343431541_787273575992880_6950198603748680694_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=9c7eae&_nc_eui2=AeH8HJQ8CnO63t5GPNbLyDClrnoVCYJXGqCuehUJglcaoNpHDyiDCDZ8qRsAHmfZw_qEnNwACpcLZOyUPbzoylww&_nc_ohc=8QSnuVU5bp4AX921kEP&_nc_ht=scontent.fhan2-4.fna&oh=00_AfCAhz4kOpn0Bg0KvNJQxESLHVGofVwpLR1ILp2_siY21Q&oe=658A05A0"
+                src="../img/logo.jpg"
                 alt=""
               />
               <div class="h-border"></div>
@@ -412,20 +383,14 @@
         </div>
       </div>
     </footer>
-
-    <!-- <script src="./lib/js/jquery-3.6.0.min.js "></script>
-    <script src="./lib/bootstrap/js/bootstrap.min.js "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.0/jquery-migrate.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script src="./lib/js/style.js "></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script>
-        new WOW().init();
-    </script> -->
-    <script src="./question.js"></script>
+      flatpickr("#myID", {
+        // altInput: true,
+        // altFomart: "F j, Y",
+        dateFomart: "d-m-Y"
+      });
+    </script>
   </body>
 </html>

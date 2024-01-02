@@ -60,16 +60,16 @@ h2 {
 #Header {
   background-color: var(--color_main);
   padding: 20px 0;
-  margin-bottom: -30px;
 }
-.header-main {
+.header-main{
   align-items: center;
   justify-content: center;
+  width: max-content;
 }
-#Header .navbar-collapse {
+#Header .navbar-collapse{
   width: 84vw;
 }
-#Header .navbar {
+#Header .navbar{
   margin: 0 50px;
 }
 #Header img {
@@ -83,7 +83,7 @@ h2 {
   width: 60vw;
   list-style: none;
 }
-#Header a {
+#Header a{
   color: #fff;
   font-weight: 700;
   line-height: 24px;
@@ -105,11 +105,9 @@ h2 {
 }
 #Header .booking-button:hover {
   background-color: var(--color_main);
-  transition: all 0.2s ease-in-out;
 }
-#Header .booking-button:hover a {
+#Header .booking-button:hover a{
   color: #fff;
-  transition: all 0.2s ease-in-out;
 }
 #Header .nav-item {
   position: relative;
@@ -118,7 +116,7 @@ h2 {
 #Header .nav-list .nav-item::before {
   width: 36px;
   height: 36px;
-  background: #028b8a;
+  background: #028B8A;
   position: absolute;
   left: -18px;
   top: 50%;
@@ -305,7 +303,7 @@ a {
   padding: 110px 0;
   float: left;
   width: 100%;
-  background: #fff url("http://tourest.webtravel.vn/images/bg-graphics.png");
+  background: #fff url("../img/bg-graphics.png");
   background-repeat: no-repeat;
   background-position: center top 40px;
   background-size: 100% auto;
@@ -360,7 +358,6 @@ a {
 a {
   transition: all 0.2s ease-in-out;
   color: #fff;
-  opacity: 0.8;
 }
 
 p {
@@ -524,7 +521,7 @@ textarea.form-control {
   float: left;
   height: auto;
   padding: 70px 0;
-  background: #17233e url("http://tourest.webtravel.vn/images/footer-bg.png")
+  background: #17233e url("../img/footer-bg.png")
     no-repeat top center;
 }
 #footer .container {

@@ -58,15 +58,14 @@ label {
 }
 h2 {
   font-weight: 400;
-  font-size: 44px;
+  font-size: 44px !important;
   line-height: 52px;
-  font-family: "Abril Fatface", cursive;
+  font-family: "Abril Fatface", cursive !important;
   margin: 0 0 25px;
 }
 #Header {
   background-color: var(--color_main);
   padding: 20px 0;
-  margin-bottom: -30px;
 }
 .header-main {
   align-items: center;
@@ -111,11 +110,11 @@ h2 {
 }
 #Header .booking-button:hover {
   background-color: var(--color_main);
-  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 0.2s ease-in-out;
 }
 #Header .booking-button:hover a {
   color: #fff;
-  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 0.2s ease-in-out;
 }
 #Header .nav-item {
   position: relative;
@@ -153,9 +152,9 @@ h2 {
   font-size: 24px;
 }
 body {
-  font-family: "Comforter Brush", cursive;
-  font-family: "Abril Fatface", cursive;
-  font-family: "Heebo", sans-serif;
+  font-family: "Comforter Brush", cursive !important;
+  font-family: "Abril Fatface", cursive !important;
+  font-family: "Heebo", sans-serif !important;
   background: #fff;
   font-size: 16px;
   font-weight: 400;
@@ -167,29 +166,29 @@ body {
 main,
 nav,
 section {
-  display: block;
+  display: block !important;
 }
 
 .small-banner {
-  position: relative;
+  position: relative !important;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1200px !important;
 }
 
 .container {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  width: 100% !important;
+  padding-right: 15px !important;
+  padding-left: 15px !important;
   margin-right: auto;
   margin-left: auto;
 }
 
 .fa-regular,
 .far {
-  font-family: "Font Awesome 6 Pro";
-  font-weight: 400;
+  font-family: "Font Awesome 6 Pro" !important;
+  font-weight: 400 !important;
 }
 
 .row {
@@ -199,8 +198,8 @@ section {
 }
 
 .col-md-6 {
-  flex: 0 0 50%;
-  max-width: 50%;
+  flex: 0 0 50% !important;
+  max-width: 50% !important;
 }
 
 .col-md-12 {
@@ -217,8 +216,9 @@ section {
 .col-md-6,
 .col-md-7,
 .col-md-12,
-.col-sm-12 {
-  position: relative;
+.col-sm-12,
+.col-12 {
+  position: relative !important;
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -249,10 +249,10 @@ section {
 }
 
 .small-banner .banner-content .small-item {
-  text-transform: capitalize;
-  font-size: 18px;
+  text-transform: capitalize !important;
+  font-size: 18px !important;
   color: #fff;
-  display: inline-block;
+  display: inline-block !important;
 }
 
 a,
@@ -307,10 +307,22 @@ a {
   padding: 110px 0;
   float: left;
   width: 100%;
-  background: #fff url("http://tourest.webtravel.vn/images/bg-graphics.png");
+  background: #fff url("../img/bg-graphics.png");
   background-repeat: no-repeat;
   background-position: center top 40px;
   background-size: 100% auto;
+}
+
+.booking-bt {
+  background: #029E9D;
+  color: #fff;
+  width: 100%;
+  border: 2px solid #029E9D;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-family: "Heebo", sans-serif !important;
+  font-weight: bold;
 }
 
 .booking-bg {
@@ -335,10 +347,10 @@ a {
 }
 
 .form-hader {
-  line-height: 52px;
-  margin: 0 0 25px;
-  font-family: "Heebo", sans-serif;
-  font-size: 24px;
+  line-height: 52px !important;
+  margin: 0 0 25pxv !important;
+  font-family: "Heebo", sans-serif !important;
+  font-size: 24px !important;
   font-weight: bold;
   margin-bottom: 0px;
   color: #474a4a;
@@ -348,10 +360,10 @@ a {
 .input-group > .custom-select,
 .input-group > .form-control,
 .input-group > .form-control-plaintext {
-  position: relative;
-  flex: 1 1 auto;
-  width: 1%;
-  min-width: 0;
+  position: relative !important;
+  flex: 1 1 auto !important;
+  /* width: 1%; */
+  min-width: 0 !important;
   margin-bottom: 0;
 }
 
@@ -360,11 +372,11 @@ form input.form-control {
 }
 
 .form-control {
-  display: block;
-  width: 100%;
-  padding: 20px 12px;
+  display: block !important;
+  width: 100% !important;
+  padding: 20px 12px !important;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 400 !important;
   line-height: 1.5;
   color: #212529;
   background-color: #fff;
@@ -386,8 +398,8 @@ form input.form-control {
 }
 
 .btn {
-  display: inline-block;
-  font-weight: 400;
+  display: inline-block !important;
+  font-weight: 400 !important;
   color: #212529;
   text-align: center;
   vertical-align: middle;
@@ -397,31 +409,27 @@ form input.form-control {
   user-select: none;
   background-color: transparent;
   border: 1px solid transparent;
-  padding: 20px 50px;
-  font-size: 1rem;
+  padding: 20px 50px !important;
+  font-size: 18px !important;
   line-height: 1.5;
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-.btn:not(:disabled):not(.disabled) {
-  cursor: pointer;
-}
-
 .btn.btn-primary {
-  line-height: 26px;
+  line-height: 26px !important;
   border: 2px solid var(--color_main);
-  border-radius: 5px;
-  padding: 15px 25px;
+  border-radius: 5px !important;
+  padding: 15px 25px !important;
   color: #fff;
-  font-weight: 700;
+  font-weight: 700 !important;
   background-color: #029e9d;
   text-transform: capitalize;
-  opacity: 1;
+  opacity: 1 !important;
   box-shadow: none !important;
   transition: all 0.3s ease-in-out;
-  margin-top: 20px;
+  margin-top: 20px !important;
 }
 
 .btn.btn-primary:hover {
@@ -431,13 +439,14 @@ form input.form-control {
 }
 
 .choose-option {
-  width: 100%;
+  width: 100% !important;
   border: 1px solid #a4cecc;
   border-radius: 5px;
   height: 66px;
   line-height: 66px;
   color: #8d8e92;
   font-size: 16px;
+  padding: 0 30px 0 18px;
 }
 
 select {
@@ -446,7 +455,7 @@ select {
 
 button,
 select {
-  text-transform: none;
+  text-transform: none !important;
 }
 
 .nice-select {
@@ -455,18 +464,18 @@ select {
   border-radius: 5px;
   border: solid 1px #e8e8e8;
   box-sizing: border-box;
-  clear: both;
+  clear: both !important;
   cursor: pointer;
-  display: block;
+  display: block !important;
   float: left;
   font-family: inherit;
-  font-size: 14px;
+  font-size: 14px !important;
   font-weight: normal;
-  height: 42px;
-  line-height: 40px;
+  height: 42px !important;
+  line-height: 40px !important;
   outline: none;
-  padding-left: 18px;
-  padding-right: 30px;
+  padding-left: 18px !important;
+  padding-right: 30px !important;
   position: relative;
   text-align: left !important;
   -webkit-transition: all 0.2s ease-in-out;
@@ -484,7 +493,7 @@ select {
   border-radius: 5px;
   box-shadow: 0 0 0 1px rgba(68, 68, 68, 0.11);
   box-sizing: border-box;
-  margin-top: 4px;
+  margin-top: 4px !important;
   opacity: 0;
   overflow: hidden;
   padding: 0;
@@ -518,13 +527,13 @@ select {
 
 .nice-select .option {
   cursor: pointer;
-  font-weight: 400;
-  line-height: 40px;
-  list-style: none;
-  min-height: 40px;
+  font-weight: 400 !important;
+  line-height: 40px !important;
+  list-style: none !important;
+  min-height: 40px !important;
   outline: none;
-  padding-left: 18px;
-  padding-right: 29px;
+  padding-left: 18px !important;
+  padding-right: 29px !important;
   text-align: left;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -537,40 +546,57 @@ select {
 }
 
 .from-text {
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 18px !important;
+  font-weight: 500 !important;
   color: #666;
-  font-family: "Heebo", sans-serif;
-  margin: 0;
+  font-family: "Heebo", sans-serif !important; 
+  margin: 0 !important;
+}
+
+.form-check {
+  display: block !important;
+  min-height: 1.5rem !important;
+  padding-left: 1.5em !important;
+  margin-bottom: 0.125rem !important;
 }
 
 .form-check-label {
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
+  color: #666666;
+  opacity: 0.9;
+  font-weight: 400 !important;
+  font-size: 16px;
+}
+
+/* .form-check-label:first-child {
+  margin-left: -22px;
+} */
+
+.form-check-input {
+  float: left !important;
+  margin-left: -1.5em !important;
+  margin-right: 4px !important;
 }
 
 .booking-price {
   margin-left: 200px;
-  font-family: "Heebo", sans-serif;
+  font-family: "Heebo", sans-serif !important;
 }
 
 .service-price {
-  margin-right: 65px;
+  margin-right: 65px !important;
   color: #17233e;
-  font-size: 18px;
-  font-weight: 400;
-  font-family: "Heebo", sans-serif;
-}
-
-.service-price:first-child {
-  margin-left: -15px;
+  font-size: 18px !important;
+  font-weight: 400 !important;  
+  font-family: "Heebo", sans-serif !important;
 }
 
 .faq-hedar {
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 20px !important;
+  font-weight: 600 !important;
   color: #666;
-  font-family: "Heebo", sans-serif;
-  margin: 0;
+  font-family: "Heebo", sans-serif !important;
+  margin-top: 60px;
 }
 
 .accordion {
@@ -582,42 +608,42 @@ select {
 }
 
 .accordion-item {
-  padding-top: 20px;
+  padding-top: 20px !important;
   background-color: #fff;
 }
 
 .accordion-item .accordion-header {
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 }
 
 .accordion-item .accordion-button {
-  font-size: 18px;
+  font-size: 18px !important;
   background: #029e9d;
   color: #fff;
-  font-family: "Heebo", sans-serif;
-  border-radius: 5px;
-  padding-top: 10px;
-  padding-bottom: 8px;
+  font-family: "Heebo", sans-serif !important;
+  border-radius: 5px !important;
+  padding-top: 10px !important;
+  padding-bottom: 8px !important;
 }
 
 .accordion-item .accordion-button.collapsed {
-  font-size: 18px;
+  font-size: 18px !important;
   background: #fff;
   color: #666;
-  border: 1px solid #e1e1e1;
-  padding-top: 12px;
+  border: 1px solid #e1e1e1 !important;
+  padding-top: 12px !important;
 }
 
 .accordion-button {
-  position: relative;
+  position: relative !important;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 1165px;
-  padding: 1rem 1.25rem;
+  width: 1165px !important;
+  padding: 1rem 1.25rem !important;
   font-size: 1rem;
   color: #212529;
-  text-align: left;
+  text-align: left !important;
   background-color: #fff;
   border: 0;
   border-radius: 0;
@@ -627,8 +653,13 @@ select {
     border-radius 0.15s ease;
 }
 
+.accordion-button p {
+  padding: 12px 10px 8px !important;
+  font-weight: 400 !important;
+}
+
 .accordion-item .collapse .card-body {
-  padding: 20px 20px 20px 20px;
+  padding: 20px 20px 20px 20px !important;
   background: #d6eeed;
   border: 1px solid #a4cecc;
   color: #666;
@@ -636,23 +667,40 @@ select {
   min-height: 1px;
 }
 
-.text {
-  display: none;
+.accordion-item .accordion-button:not(.collapsed) {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
-.accordion-item .accordion-button:focus {
-  font-size: 18px;
+.accordion-item .accordion-button {
+  font-size: 18px !important;
   background: #029e9d;
   color: #fff;
-  font-family: "Heebo", sans-serif;
-  border-radius: 5px;
-  padding-top: 10px;
-  padding-bottom: 8px;
+  font-family: "Heebo", sans-serif !important;
+  border-radius: 5px !important;
+  padding-top: 10px !important;
+  padding-bottom: 8px !important;
 }
 
-.accordion-item .accordion-button:focus .icon {
+/* .accordion-item .accordion-button:focus .icon {
   transform: rotate(-180deg);
   transition: all 0.3s linear;
+} */
+
+.accordion-item .accordion-button::after {
+  background: transparent;
+  content: "\f078";
+  font-weight: 900;
+  font-size: 18px;
+  font-family: "fontawesome" !important;
+  width: auto;
+  height: auto;
+  margin-left: auto;
+  transition: transform 0.2s ease-in-out;
+}
+
+.accordion-item .accordion-button:not(.collapsed)::after {
+  transform: rotate(-180deg);
 }
 
 input:focus,
@@ -663,12 +711,41 @@ button:focus {
   box-shadow: none;
 }
 
+.flatpickr-months .flatpickr-month {
+  background-color: var(--color_main) !important;
+}
+
+.flatpickr-current-month .flatpickr-monthDropdown-months {
+  background-color: var(--color_main) !important;
+}
+
+.flatpickr-weekdays {
+  background-color: var(--color_main) !important;
+}
+
+.flatpickr-weekday {
+  background-color: var(--color_main) !important;
+  color: #fff !important;
+}
+
+.flatpickr-calendar.arrowTop::after {
+  border-bottom-color: var(--color_main) !important;
+}
+
+.flatpickr-calendar.arrowBottom::after {
+  border-top-color: var(--color_main) !important;
+}
+
+
+
+
+
 #footer {
   width: 100%;
   float: left;
   height: auto;
   padding: 70px 0;
-  background: #17233e url("http://tourest.webtravel.vn/images/footer-bg.png")
+  background: #17233e url(../img/footer-bg.png)
     no-repeat top center;
 }
 #footer .container {
