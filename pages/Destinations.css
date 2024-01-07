@@ -178,13 +178,13 @@ body {
     color: #FFF;
 }
 
-/* Start_home */
 /* Destinations_img */
 .bg img {
     width: 100%;
     position: relative;
 }
 
+/* Start_home */
 #destinations_img {
     position: absolute;
     top: 580px;
