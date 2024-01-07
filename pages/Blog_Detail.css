@@ -59,7 +59,7 @@
 
 #Header .booking-button a {
     color: var(--color_main);
-    background-color: #fff;
+    background-color: transparent;
 }
 
 #Header .booking-button {
@@ -76,7 +76,6 @@
 
 #Header .booking-button:hover a {
     color: #fff;
-    background-color: var(--color_main);
 }
 
 #Header .nav-item {

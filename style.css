@@ -112,6 +112,493 @@ body {
     overflow-x: hidden;
     color: #666;
 }
+/* Banner */
+.banner-item .banner-caption{
+    width: 100%;
+    padding: 90px 0;
+}
+.banner-item .container{
+    max-width: 1080px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.banner-item .row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.banner-item .half{
+    flex: 0 0 50%;
+    max-width: 50%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.banner-item .hero-text{
+    width: 100%;
+    float: left;
+    height: auto;
+    max-width: 550px;
+    margin-top: 15px;
+}
+.banner-item h3{
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin: 0 0 15px;
+    font-family: "Comforter Brush", cursive;
+    color: var(--color_brush);
+    line-height: 34px;
+}
+.banner-item h1{
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 75px;
+    margin: 0 0 28px;
+    font-family: "Abril Fatface", cursive;
+    color: #17233E;
+}
+.banner-item p{
+    color: #686d7a;
+    margin: 0 0 40px;
+    font-size: 18px;
+    line-height: 28px;
+}
+.banner-item .banner-button-group{
+    display: flex;
+    gap: 15px !important;
+    flex-wrap: wrap;
+}
+.banner-item .btn1{
+    line-height: 26px;
+    border: 2px solid var(--color_main);
+    border-radius: 5px;
+    padding: 15px 25px;
+    color: #fff;
+    font-weight: 700;
+    background: var(--color_main);
+    text-transform: capitalize;
+    opacity: 1;
+    box-shadow: none !important;
+    outline: none !important;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1rem;
+}
+.banner-item .btn1:hover{
+    background: transparent;
+    color: var(--color_main);
+}
+.banner-item .btn2{
+    border: 2px solid #B1B1B1;
+    color: #17233E;
+    background: #FFFFFF;
+    line-height: 26px;
+    border-radius: 5px;
+    padding: 15px 25px;
+    font-weight: 700;
+    text-transform: capitalize;
+    opacity: 1;
+    box-shadow: none !important;
+    outline: none !important;
+    text-decoration: none;
+}
+.banner-item .btn2:hover{
+    background-color: transparent;
+    border: 2px solid var(--color_main);
+    color: var(--color_main);
+}
+.banner-item img{
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+
+}
+.banner{
+    position: relative;
+    background: url(./img/bottom-left.png) no-repeat left bottom;
+    width: 100%;
+    height: auto;
+}
+.banner-layer{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    background: url(./img/banner-top-right.png) no-repeat top right;
+    background-size: 40% auto;
+    z-index: 1;
+    -webkit-tap-highlight-color: transparent;
+}
+.banner .shape1{
+    position: absolute;
+    right: 40px;
+    top: 20%;
+    animation: rotate 9s linear infinite;
+}
+.banner .shape2{
+    position: absolute;
+    right: 48%;
+    top: 10%;
+    animation: rotate 9s linear infinite;
+}
+.banner .shape3{
+    position: absolute;
+    right: 55%;
+    bottom: 25%;
+    animation: transitionRotate 9s linear infinite;
+}
+@keyframes rotate{
+    0% {
+        transform: rotate(0deg);
+    }
+    
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes transitionRotate{
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    
+    50% {
+        transform: translateY(-70px) rotate(180deg);
+    }
+    100% {
+        transform: translateY(0) rotate(360deg);
+    }
+}
+/* Destinations */
+.destionation .section-title{
+    width: 100%;
+    height: auto;
+    margin: 0 0 70px;
+    text-align: center!important;
+}
+.destionation .section-title h3{
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin: 0 0 15px;
+    font-family: "Comforter Brush", cursive;
+    color: var(--color_brush);
+    line-height: 34px;
+}
+.destionation .section-title h2{
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 52px;
+    font-family: "Abril Fatface", cursive;
+    margin: 0 0 25px;
+    color: #333;
+}
+/* Destinations_img */
+#destinations_img {
+    /* position: absolute; */
+    /* top: 580px; */
+    width: 80%;
+    margin: 0 10%;
+}
+
+#destinations_img .img_infor {
+    margin: 0 15px;
+}
+
+#destinations_img .des_img_big {
+    width: 100%;
+}
+
+#destinations_img .img_big .img_infor {
+    margin-bottom: 15px;
+    border-radius: 6px;
+}
+
+#destinations_img .img_small .img_infor {
+    width: 30.8%;
+    height: 160px;
+    border-radius: 6px;
+    margin-bottom: 30px;
+}
+
+#destinations_img .des_img_small {
+    width: 100%;
+}
+
+#destinations_img .infor {
+    position: relative;
+    z-index: 6;
+    left: 30px;
+    bottom: 100px;
+}
+
+#destinations_img .text_brush {
+    color: var(--color_brush);
+    font-size: 24px;
+    font-family: var(--font2);
+}
+
+#destinations_img .text_country {
+    color: #FFF;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: var(--font1);
+}
+
+#destinations_img .des_img {
+    display: block;
+    transition: all .3s ease;
+}
+
+#destinations_img .des_img:hover {
+    transform: scale(1.3);
+}
+
+#destinations_img .img_infor {
+    display: block;
+    overflow: hidden;
+}
+/* About */
+.section-spacing {
+    padding: 110px 0;
+    float: left;
+    width: 100%;
+}
+.about .booking-button a {
+    color: #fff;
+    background-color: transparent;
+    font-weight: 700;
+    line-height: 24px;
+    font-size: 18px;
+    padding: 13px 0;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+.about .booking-button {
+    display: block;
+    width: max-content;
+    height: 60px;
+    padding: 15px 25px;
+    border-radius: 5px;
+    border: 2px solid var(--color_main);
+    background-color: var(--color_main);
+}
+.about .booking-button:hover {
+    background-color: #fff;
+}
+.about .booking-button:hover a{
+    color: var(--color_main);
+}
+.about .image img{
+    height: auto;
+    width: 640px;
+    display: block;
+    /* vertical-align: middle; */
+    border-style: none;
+}
+.about .title h3{
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin: 0 0 15px;
+    font-family: "Comforter Brush", cursive;
+    color: #FDC703;
+    line-height: 34px;
+}
+.about .title h2{
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 52px;
+    font-family: "Abril Fatface", cursive;
+    margin: 0 0 25px;
+    color: black;
+}
+.about p{
+    font-size: 17px;
+    line-height: 28px;
+    color: #888;
+    margin: 0 0 25px;
+}
+.about h5{
+    color: #666;
+    margin-top: 0 !important;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 0 10px;
+    line-height:1.2;
+}
+.about .icon-bag{
+    width: 84px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    line-height: 58px;
+    background: #029E9D;
+    border-radius: 50%;
+}
+.about .icon-bag i {
+    font-size: 24px;
+    color: #fff;
+    width: 100%;
+}
+.about .text{
+    margin-left: 16px;
+}
+.about .container{
+    max-width:1120px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.about .content{
+    max-width: 41%;
+}
+/* Feature */
+.feature {
+    background-image: url(../img/features.png) !important;
+    background-size: cover !important;
+    background-position: center center !important;
+}
+.feature .container{
+    max-width: 960px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.feature .row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 60%;
+}
+.feature .justify-content-end {
+    -ms-flex-pack: end!important;
+    justify-content: flex-end!important;
+}
+.feature .section-title{
+    width: 100%;
+    float: left;
+    height: auto;
+}
+.feature .section-title h3{
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin: 0 0 15px;
+    font-family: "Comforter Brush", cursive;
+    color: var(--color_brush);
+    line-height: 34px;
+}
+.feature .section-title h2{
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 52px;
+    font-family: "Abril Fatface", cursive;
+    margin: 0 0 25px;
+    color: #333;
+}
+.feature p{
+    font-size: 17px;
+    line-height: 28px;
+    color: #888;
+    margin: 0 0 25px;
+}
+.feature .play-button{
+    margin: 15px 0 0;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+.feature .play-button a{
+    position: relative;
+    display: inline-block;
+    transition: all 0.2s ease-in-out;
+    color: #333;
+    background-color: transparent;
+}
+.feature .play-button a::before, .feature .play-button a::after {
+    content: "";
+    display: block;
+    height: 60px;
+    left: 50%;
+    margin: -40px 0 0 -40px;
+    position: absolute;
+    top: 50%;
+    width: 80px;
+    z-index: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.feature .play-button a i{
+    display: inline-block;
+    background: #029E9D;
+    line-height: 60px;
+    border: 20px solid #d1e9e8;
+    border-radius: 50%;
+    width: 100px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    position: relative;
+    z-index: 6;
+    -webkit-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    font-weight: 900;
+    -webkit-font-smoothing: antialiased;
+}
+.feature .play-button a::after {
+    animation: bounce 1.5s linear infinite;
+}
+@keyframes bounce{
+    0%, 25% {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color: rgba(2, 158, 157, 0.15);
+        margin: -40px 0 0 -40px;
+    }
+    100% {
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        background-color: rgba(2, 158, 157, 0);
+        margin: -80px 0 0 -80px;
+    }
+}
+.feature .features-items{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0 0;
+}
+.feature .features-items h3{
+    font-size: 34px;
+    color: #029E9D;
+    font-family: "Heebo", sans-serif;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 0 0 15px;
+    line-height: 34px;
+}
+.feature .features-items h4{
+    font-size: 18px;
+    color: #666;
+    font-family: "Heebo", sans-serif;
+    font-weight: 400;
+    margin-bottom: 0!important;
+    line-height: 1.2;
+}
+/* Footer */
 #footer{
     width: 100%;
     float: left;
