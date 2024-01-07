@@ -178,6 +178,7 @@ body {
     color: #FFF;
 }
 
+/* Start_home */
 /* Destinations_img */
 .bg img {
     width: 100%;
@@ -253,6 +254,8 @@ body {
     display: block;
     overflow: hidden;
 }
+/* End_home */
+
 
 /* Footer */
 #footer {
