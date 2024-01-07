@@ -183,6 +183,7 @@ body {
     max-width: 100%;
     position: relative;
 }
+/* Start_home */
 #blog_list{
     position: absolute;
     top: 570px;
@@ -265,6 +266,7 @@ body {
     color: #17233E;
     cursor:pointer;
 }
+/* End_home */
 
 /* Footer */
 #footer{
