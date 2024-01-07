@@ -221,6 +221,7 @@ body {
     font-size: 14px;
 }
 
+/* Start_home */
 #tours .tour {
     flex-wrap: wrap;
     justify-content: space-between;
@@ -285,6 +286,7 @@ body {
     font-size: 18px;
     color: #666;
 }
+/* End_home */
 
 #tours .pages {
     color: #666;
