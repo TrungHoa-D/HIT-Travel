@@ -197,10 +197,11 @@ body {
 
 #destinations_img .des_img_big {
     width: 100%;
+    height: 100%;
 }
 
 #destinations_img .img_small {
-    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 #destinations_img .img_big .img_infor {
@@ -218,6 +219,7 @@ body {
 
 #destinations_img .des_img_small {
     width: 100%;
+    height: 100%;
 }
 
 #destinations_img .infor {
