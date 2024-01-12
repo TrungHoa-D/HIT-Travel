@@ -223,20 +223,20 @@ body {
 
 /* Start_home */
 #tours .tour {
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: space-between;
 }
 
 #tours .t {
-    width: max-content;
+    width: 30.7758%;
     box-shadow: #878787;
-    margin: 10px;
+    margin: 0.8614%;
+    border-radius: 7px;
 }
 
 #tours img {
     position: relative;
-    width: 370px;
-    height: 259px;
+    width: 100%;
 }
 
 #tours .time {
@@ -251,8 +251,8 @@ body {
 }
 
 #tours .card {
-    padding: 30px;
-    width: 370px;
+    padding: 8.108%;
+    width: 100%;
     height: 220px;
     /* box-shadow: #878787; */
 }
