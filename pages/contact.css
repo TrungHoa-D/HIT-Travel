@@ -98,6 +98,7 @@ h2 {
 }
 #Header .booking-button {
   height: 60px;
+  width: max-content;
   padding: 15px 25px;
   border-radius: 5px;
   border: 2px solid #fff;
