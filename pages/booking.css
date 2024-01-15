@@ -110,11 +110,9 @@ h2 {
 }
 #Header .booking-button:hover {
   background-color: var(--color_main);
-  transition: all 0.2s ease-in-out;
 }
 #Header .booking-button:hover a {
   color: #fff;
-  transition: all 0.2s ease-in-out;
 }
 #Header .nav-item {
   position: relative;

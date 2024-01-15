@@ -598,6 +598,441 @@ body {
     margin-bottom: 0!important;
     line-height: 1.2;
 }
+/* Tanh */
+.section-spacing {
+    padding: 110px 10px;
+    float: left;
+    width: 100%;
+    background: url("http://tourest.webtravel.vn/images/bg-graphics.png");
+    background-repeat: no-repeat;
+    background-position: center top 40px;
+    background-size: 100% auto;
+}
+
+.section-spacing.tours {
+    padding-bottom: 80px;
+}
+
+
+/* Row */
+#popular .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+#traveler_says .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+#blogs .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+/* Column */
+#popular .col-md-12, .col-lg-4, .col-md-6, .col-lg-5, .col-lg-7 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+#popular .col-md-12 {
+    flex:  0 0 100%;
+    max-width: 100%;
+}
+
+#popular .col-lg-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
+#popular .col-lg-5 {
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+}
+
+#popular .col-lg-7 {
+    flex:  0 0 58.333333%;
+    max-width: 58.333333%;
+}
+
+#traveler_says .col-md-12, .col-lg-4, .col-md-6, .col-lg-5, .col-lg-7 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+#traveler_says .col-md-12 {
+    flex:  0 0 100%;
+    max-width: 100%;
+}
+
+#traveler_says .col-lg-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
+#traveler_says .col-lg-5 {
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+}
+
+#traveler_says .col-lg-7 {
+    flex:  0 0 58.333333%;
+    max-width: 58.333333%;
+}
+
+
+#blogs .col-md-12, .col-lg-4, .col-md-6, .col-lg-5, .col-lg-7 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+#blogs .col-md-12 {
+    flex:  0 0 100%;
+    max-width: 100%;
+}
+
+#blogs .col-lg-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
+#blogs .col-lg-5 {
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+}
+
+#blogs .col-lg-7 {
+    flex:  0 0 58.333333%;
+    max-width: 58.333333%;
+}
+
+#popular .section-title {
+    width: 100%;
+    float: left;
+    height: auto;
+    margin: 0 0 70px;
+}
+
+#traveler_says .section-title {
+    width: 100%;
+    float: left;
+    height: auto;
+    margin: 0 0 70px;
+}
+
+#blogs .section-title {
+    width: 100%;
+    float: left;
+    height: auto;
+    margin: 0 0 70px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mt-n6 {
+    margin-top: -6px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #333;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 400; 
+    text-transform: capitalize;
+    margin: 0 0 15px;
+    font-family: "Comforter Brush", cursive;
+    color: #FDC703;
+    line-height: 34px;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 52px;
+    font-family: "Abril Fatface", cursive;
+    margin: 0 0 25px;
+}
+
+h5 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 0 10px;
+    color: #666;
+}
+
+.section-title h2 {
+    position: relative;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+  }
+  
+
+a {
+    transition: all 0.2s ease-in-out;
+    color: #333;
+}
+
+a, a:active, a:focus, a:hover {
+    outline: none;
+    text-decoration: none;
+}
+
+
+#popular img {
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+
+#traveler_says img {
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+
+#blogs img {
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+
+.tour-duration {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: #FDC703;
+    color: #fff;
+    padding: 14px 10px 10px;
+    border-radius: 5px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.tour-duration i {
+    display: block;
+    font-size: 20px;
+}
+
+.fa-solid, .fas {
+    font-family: "Font Awesome 6 Pro";
+    font-weight: 900;
+}
+
+.fa-clock-rotate-left:before, .fa-history:before {
+    content: "\f1da";
+}
+
+.tour-card .card-body {
+    padding: 35px;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+}
+
+.tour-card {
+    border: none;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.09) !important;
+    position: relative;
+    margin: 0 0 30px;
+    z-index: -1;
+}
+
+.tour-card .card-body .tour-tags {
+    margin: 0 0 20px;
+}
+
+ .tour-card .card-body .tour-tags span {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 5px 14px;
+    border-radius: 5px;
+    color: #fff;
+    background: #029E9D;
+    font-weight: 400;
+    margin: 0 20px 10px 0;
+}
+
+.tour-card .card-body .tour-tags span.tour-rating {
+    background: #FDC703;
+}
+
+.tour-card h6 {
+    transition: all 0.3s ease-in-out;
+    color: #666;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.section-spacing.tours .tour-card p {
+    color: #9B9B9B;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.section-spacing.blogs .tour-card p {
+    color: #9B9B9B;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.mb-0, .my-0 {
+    margin-bottom: 0;
+}
+
+.space {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inverse-bg {
+    background-color: #fcfcfc;
+}
+
+.align-items-center {
+    align-items: center !important;
+}
+
+.reviews .review-left {
+    width: 100%;
+    float: left;
+    height: auto;
+    position: relative;
+}
+
+.reviews .review-left img {
+    position: relative;
+    z-index: 3;
+}
+
+.reviews .review-left .review-shape1 {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    background: #FDC703;
+    border-radius: 50%;
+    top: 20%;
+    right: 20%;
+}
+
+.reviews .review-left .review-shape2 {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    background: #FDC703;
+    border-radius: 50%;
+    bottom: 16%;
+    left: 0%;
+}
+
+.reviews .review-slide .carousel-item .traveller {
+    font-size: 16px;
+    color: #878787;
+    font-style: italic;
+    margin: 0 0 30px;
+}
+
+.reviews .brand-section {
+    display: flex;
+    padding: 50px 0;
+}
+
+.reviews .brand-section .h-border {
+    margin-left: 35px;
+    height: 26px;
+    border: 1px solid #B3BAC8;
+    margin-right: 20px;
+}
+
+.section-spacing.blogs .card-body .d-flex {
+    margin: 0 0 30px;
+}
+
+.section-spacing.blogs .card-body .avatar .media-icon {
+    color: #878787;
+    font-size: 12px;
+    background: none;
+    width: auto;
+    height: auto;
+}
+
+.section-spacing.blogs .card-body .avatar .media-icon img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.section-spacing.blogs .author-info {
+    margin-left: 1rem;
+}
+
+.m-0 {
+    margin: 0 !important;
+}
+
+.section-spacing.blogs .card-body .author-info h5 {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+}
+
+.section-spacing.blogs .card-body .author-info p {
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.section-spacing.blogs .card-body .time span {
+    font-size: 12px;
+    color: #878787;
+    position: relative;
+    left: 146px;
+}
+
+.read-more {
+    font-size: 16px;
+    color: #029E9D;
+    font-weight: 600;
+    display: block;
+    text-align: right;
+    transition: color 0.3s ease;
+}
+
+.read-more:hover {
+    color: #17233E;
+}
 /* Footer */
 #footer{
     width: 100%;
